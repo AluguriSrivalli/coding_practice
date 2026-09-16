@@ -15,6 +15,8 @@ import sys
 #  3. INTEGER b
 #
 
+# This problem emphasizes the importance of preserving decimal values. If `total` and `index_value` are stored as integers, the calculation may produce incorrect results when either value is odd. Therefore, they should be handled as decimal values to ensure accurate division.
+
 def bonAppetit(bill, k, b):
     # Write your code here
     total = sum(bill)/2
