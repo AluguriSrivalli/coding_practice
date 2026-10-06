@@ -27,6 +27,18 @@ def angryProfessor(k, a):
     else:
         return "YES"
 
+#optimized approach
+'''
+def angryProfessor(k, a):
+    count = 0
+    for time in a:
+        if time <= 0:
+            count += 1
+            if count >= k:
+                return "NO"  # Class is NOT canceled, enough students arrived early
+    return "YES"
+'''
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
